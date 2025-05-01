@@ -12,8 +12,7 @@ const Homepage = (): React.JSX.Element => {
 					<p>Homepage</p>
 				</div>
 			) : (
-				<div className="flex justify-between w-full">
-					<Dashboard></Dashboard>
+				<div className="flex justify-center w-full">
 					<PostContainer></PostContainer>
 				</div>
 			)

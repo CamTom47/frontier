@@ -7,20 +7,19 @@ import { Link } from "react-router";
 const Navbar = (): React.JSX.Element => {
 	let currentUser = {};
 	return (
-		<div className='flex w-full bg-green-500 mb-5 h-15'>
+		<div className='flex w-80% bg-green-500 my-8 mx-30 h-20 rounded-full'>
 			{currentUser ? (
-				<div className="flex justify-between w-full px-8">
-					<div className='hamburger'>
-						<span className="border-2 w-1/2"></span>
-						<span className="border-2 w-1/2"></span>
-						<span className="border-2 w-1/2"></span>
+				<div className='flex justify-between items-center w-full px-8'>
+					<button className='flex flex-col gap-y-1'>
+						<div className='border-2 w-8 rounded-2xl '></div>
+						<div className='border-2 w-8 rounded-2xl '></div>
+						<div className='border-2 w-8 rounded-2xl '></div>
+					</button>
+					<div className="flex justify-center items-baseline gap-x-3">
+						<Link className='text-3xl' to={'/'}>Frontier</Link>
+						<input className="bg-neutral-100 rounded-full h-10 text-xl text-center" type="text" placeholder="Search" />
 					</div>
-          <div>
-            Frontier
-            </div>
-					<div className='bg-white size-12 rounded-full text-center'>
-            <p className="text-lg">T</p>
-            </div>
+					<button className='flex justify-center items-center bg-neutral-100 size-16 rounded-full text-3xl'>T</button>
 				</div>
 			) : (
 				<div>

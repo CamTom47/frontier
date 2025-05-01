@@ -2,11 +2,13 @@ import { Route, Routes } from 'react-router'
 import Homepage from "./components/Homepage/Homepage"
 import Navbar from "./components/Navbar/Navbar"
 
+import './App.css';
+
 
 function App() {
 
   return (
-    <>
+    <div className="App">
     <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Homepage/>}></Route>
@@ -28,7 +30,7 @@ function App() {
         <Route path="/hikes"></Route>
         <Route path="/hikes/hike_id:"></Route>
       </Routes>
-    </>
+    </div>
   )
 }
 
